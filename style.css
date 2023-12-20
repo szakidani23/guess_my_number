@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem 0;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  background: linear-gradient(rgba(18, 18, 18, 0.875), rgb(18, 18, 18)),
+    url('bg_1.webp') center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-line {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+/* Button */
+
+.btn {
+  padding: 1.3rem 2.2rem;
+  border: 5px solid black;
+  cursor: pointer;
+  display: inline-block;
+  border-style: groove;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  background-color: #f2f2f2dd;
+  transform: translate(0, -0.25rem);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Button end */
+
+.title {
+  font-size: 4.6rem;
+}
+
+.between {
+  margin: 3.5rem 0;
+  color: #f2f2f2a5;
+}
+
+.number {
+  border: 1px solid #f2f2f2;
+  border-style: dotted;
+  display: inline-block;
+  padding: 2rem 4rem;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+}
+
+.guess {
+  padding: 1.3rem 2.2rem;
+}
+
+.message {
+  margin: 4rem 0;
+  color: #f2f2f2a5;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.label-img {
+  opacity: 0.2;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #f2f2f2a5;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: aqua;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 2rem;
+    justify-content: start;
+  }
+
+  .top-line {
+    justify-content: center;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  .guess {
+    margin-bottom: 2.2rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+}

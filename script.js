@@ -4,11 +4,8 @@ let secretNumber = Math.trunc(Math.random() * 50 + 1);
 let score = 7;
 let highscore = 0;
 
-console.log(secretNumber); // Delete it
-
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
-  console.log(guess, typeof guess); // You can delete it
 
   // No guess
   if (!guess) {

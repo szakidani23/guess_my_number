@@ -80,6 +80,7 @@ body {
 .message {
   margin: 4rem 0;
   color: #f2f2f2a5;
+  font-size: 2.2rem;
 }
 
 .score-container {
